@@ -7,7 +7,7 @@ http://127.0.0.1:5000/
 
 # Run the app with dockerfile
 
-docker build -t dinner_flask_svc_app .
-docker images
-docker run -d -p 5099:5000 dinner_flask_svc_app
-http://localhost:5099/
+docker build -t dinner_flask_svc_app . <br>
+docker images <br>
+docker run -d -p 5099:5000 dinner_flask_svc_app <br>
+http://localhost:5099/ <br>
