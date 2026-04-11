@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+RUN apt update && apt install -y ansible
+RUN apt install -y openssh-client sshpass
+WORKDIR /app
+COPY inventory /etc/ansible/hosts
+COPY ansible.cfg /etc/ansible/ansible.cfg
+CMD ["bash"]
+

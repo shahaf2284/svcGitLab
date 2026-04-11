@@ -1,0 +1,2 @@
+[servers]
+ansible-slave ansible_user=slave ansible_password=2284
