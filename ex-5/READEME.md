@@ -161,8 +161,9 @@ After creating the repository, push your image.
     
     docker login localhost:8082
 
-Push image
+Push image and change tag befor 
 
+    docker tag python_health_check:v0.1 localhost:8082/python_health_check:v0.1
     docker push localhost:8082/python_health_check:v0.1
 
 
