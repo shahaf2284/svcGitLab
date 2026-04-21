@@ -126,12 +126,10 @@ docker exec nexus3 cat /nexus-data/admin.password
 
 get the password from the nexus3 image first time
 
-|---------------------------|
 |    Default login          |
 |---------------------------|
 |    Username: admin        |
 |    Get initial password   |
-|---------------------------|
 
 Change the admin password
 Complete initial setup
