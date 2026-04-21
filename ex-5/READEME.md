@@ -134,4 +134,22 @@ get the password from the nexus3 image first time
 Change the admin password
 Complete initial setup
 
+## Step 8 – Create Docker Repository
 
+Goal - Create a private Docker repository inside Nexus.
+
+Steps 
+1. Go to: Settings → Repositories
+2. Click: Create repository
+3. Select: docker (hosted)
+
+Configuration
+  Name: my-private-hub
+  HTTP Port: 8082
+  
+#### Why this is important
+    This repository will act as your private Docker registry.
+
+
+#### Pushing Docker Image to Nexus
+    After creating the repository, push your image.
