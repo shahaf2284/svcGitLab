@@ -152,4 +152,16 @@ Configuration
 
 
 #### Pushing Docker Image to Nexus
-    After creating the repository, push your image.
+
+After creating the repository, push your image.
+    
+    docker login localhost:8082
+
+Push image
+
+    docker push localhost:8082/python_health_check:v0.1
+
+
+
+
+    
