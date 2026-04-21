@@ -153,6 +153,10 @@ Configuration
 
 #### Pushing Docker Image to Nexus
 
+Check if the web work on port 8082 docker connected to nexus
+    
+    curl -v http://localhost:8082/v2/
+
 After creating the repository, push your image.
     
     docker login localhost:8082
