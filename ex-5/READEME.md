@@ -167,6 +167,14 @@ Push image and change tag befor
     docker push localhost:8082/python_health_check:v0.1
 
 
+## Step 9 - 11
 
+remove the continer and image
 
-    
+    docker rm localhost:8082/python_health_check:v0.1
+    docker rmi localhost:8082/python_health_check:v0.1
+
+then need to run the image from the nexus 
+
+    docker run -d -p 5000:5000 --name python-health-from-nexus localhost:8082/my-private-hub/python_health_check:v0.1
+
