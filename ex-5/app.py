@@ -13,8 +13,11 @@ def index():
 @app.route('/health')
 def health_check():
     # Returns a JSON response with status 200 and "ok"
+    print("yes")
     return "ok", 200
 
 if __name__ == '__main__':
     # debug=True restarts automatically when changes are made
     app.run(debug=True)
+
+
